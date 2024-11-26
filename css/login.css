@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+    height: 100vh;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inside-register {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  width: 40%;
+  height: 60vh;
+  padding: 0;
+}
+
+.body {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 15px;
+  padding-bottom: 40px;
+  padding-top: 50px;
+
+}
+
+.button-mat-card {
+  padding-top: 1rem;
+}
+
+form {
+  background-color: white;
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1.5em;
+  border-radius: 20px;
+}
+
+.image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputs_conteiner {
+  width: 60%;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 3em;
+  font-family: "Roboto", "Helvetica Neue", sans-serif;
+}
+
+h2 {
+  font-size: 1.3em;
+  margin-top: 20px;
+  transition: font-size 0.3s ease; /* Transição suave */
+}
+
+h1,
+h2,
+h3 {
+  margin: 0; /* Remove o espaço abaixo */
+}
+
+input {
+  width: 100%;
+  border: none;
+  border-bottom: 1.5px solid blue;
+  font-size: 1em;
+  transition: font-size 0.3s ease, border-bottom 0.3s ease; /* Transição suave */
+}
+
+input:focus {
+  outline: none;
+  font-size: 1.3em;
+  transition: font-size 0.3s ease; /* Transição suave */
+}
+
+input:hover {
+  transition: 0.3s ease;
+  font-size: 1.3em; /* Aumenta o tamanho da fonte no hover */
+}
+
+/* Modificar o h2 quando o input estiver em hover ou focus */
+.inputs_conteiner input:hover + h2,
+.inputs_conteiner input:focus + h2 {
+  font-size: 1em; /* Diminui o tamanho do h2 ao passar o mouse sobre o input */
+}
+
+input:active {
+  transition: 1s;
+  font-size: 1.3em;
+}

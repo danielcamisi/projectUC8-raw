@@ -1,0 +1,65 @@
+.project-card {
+    padding: 20px;
+    margin: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    
+}
+
+.welcome-title {
+    font-size: 2em;
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.section-title {
+    font-size: 1.5em;
+    color: #34495e;
+    margin-top: 20px;
+}
+
+.sub-section-title {
+    font-size: 1.2em;
+    color: #16a085;
+    margin-top: 10px;
+}
+
+.section-text {
+    font-size: 1em;
+    color: #7f8c8d;
+    line-height: 1.6;
+}
+
+.styled-list {
+    list-style: disc inside;
+    margin: 10px 0;
+    padding: 0;
+    color: #34495e;
+}
+
+.styled-list li {
+    margin: 5px 0;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.policy-link {
+    text-decoration: none;
+    color: #3498db;
+}
+
+.policy-image {
+    max-width: 100px;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+.full{
+    margin-left:6em;
+    margin-right: 6em;
+}

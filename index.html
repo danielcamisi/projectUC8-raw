@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index.css">
+    <title>Página Principal</title>
+</head>
+<body>
+<div class="project-card">
+    <h1 class="welcome-title"> Seja Bem-vindo! </h1>
+    <div class="full">
+        <h3 class="section-title"> 1. Introdução </h3>
+        <p class="section-text"> 
+            Este projeto tem como objetivo desenvolver uma topologia completa em um ambiente 
+            Linux utilizando o Ubuntu Server. O foco é explorar, configurar e gerenciar os principais
+            elementos de uma infraestrutura de rede, promovendo um aprendizado prático sobre sistemas 
+            operacionais Linux, administração de servidores e redes computacionais.
+        </p>
+        <h3 class="section-title"> 2. Objetivos Principais </h3>
+        <ul class="styled-list">
+            <li>Criar um ambiente funcional de rede utilizando servidores Ubuntu.</li>
+            <li>
+                Implementar diferentes componentes de uma topologia, incluindo roteadores,
+                switches virtuais, servidores DNS, servidores DHCP e estações clientes.
+            </li>
+            <li>
+                Demonstrar a integração e o funcionamento de todos 
+                os elementos da topologia, simulando um ambiente real.
+            </li>
+        </ul>
+        <h3 class="section-title">3. Tecnologias Utilizadas </h3>
+        <ul class="styled-list">
+            <li>Sistema Operacional: Ubuntu Server 22.04 LTS</li>
+            <h4 class="sub-section-title"> Ferramentas:</h4>
+            <li>NetPlan</li>
+            <li>Windows 10 PRO (Máquinas Clientes)</li>
+            <li>PFSense (Firewall)</li>
+            <li>GLPI</li>
+            <li>Samba</li>
+            <li>Angular | PrimeNG | Angular Material | NodeJS</li>
+            <li>PuTTy</li>
+        </ul>
+        <h3 class="section-title">4. Componentes da Topologia </h3>
+        <ul class="styled-list">
+            <li>Servidor Central: Configurado como servidor DHCP, DNS e Web.</li>
+            <li>Firewall: Como gerenciador e monitoramento do servidor utilizamos o PFSense e Wire-Shark.</li>
+            <li>Estações Clientes: Configuradas para obter IP via DHCP e resolver nomes por DNS.</li>
+        </ul>
+        <h3 class="section-title">5. Hardware</h3>
+        <ul class="styled-list">
+            <h4 class="sub-section-title">Roteador Cisco</h4>
+            <li>Responsável pelo roteamento de pacotes entre diferentes redes.</li>
+            <li>Configurado para suportar protocolos como OSPF, EIGRP ou BGP, dependendo do projeto.</li>
+            <li>Fornece serviços como NAT e ACLs para controlar e otimizar o tráfego da rede.</li>
+            <h4 class="sub-section-title">Máquinas Clientes (Windows 10)</h4>
+            <li>Funcionam como estações de trabalho dos usuários finais.</li>
+            <li>Configuradas para se conectar à rede via DHCP para obtenção de IP e DNS.</li>
+            <li>Utilizadas para validar conectividade e acesso aos serviços da rede, como internet e compartilhamento de arquivos.</li>
+            <h4 class="sub-section-title">Switch Cisco</h4>
+            <li>Dispositivo de camada 2 usado para interligar dispositivos em uma LAN.</li>
+            <li>Configurado com VLANs para segmentação de tráfego e segurança.</li>
+            <li>Pode incluir funcionalidades como STP (Spanning Tree Protocol) para evitar loops e QoS para priorização de tráfego.</li>
+            <h4 class="sub-section-title">Rack Furukawa</h4>
+            <li>Estrutura física que organiza os equipamentos de rede e servidores.</li>
+            <li>Garante melhor ventilação, acesso e gerenciamento dos dispositivos.</li>
+            <li>Suporta cabeamento estruturado para manter o ambiente organizado.</li>
+            <h4 class="sub-section-title">Patch Panel</h4>
+            <li>Ponto central de conexão que organiza e facilita o gerenciamento do cabeamento de rede.</li>
+            <li>Conecta os cabos dos dispositivos ao switch ou roteador.</li>
+            <li>Garante flexibilidade para alterações no cabeamento sem a necessidade de reconfigurar fisicamente o rack.</li>
+        </ul>
+    </div>
+    <div class="footer">
+        <a href="https://senacspedu-my.sharepoint.com/:w:/g/personal/iago_lfarias_senacsp_edu_br/EXOSVgyadGxKuGTtUGE19M4Bzz4eXo_nvE4OUZskYI_ENg?e=nlRLBw" class="policy-link">
+            <img src="../../../../assets/imgs/LGPD.png" alt="LGPD Logo" class="policy-image">
+            <p> Verifique nossas Políticas e conteúdos </p>
+        </a>
+    </div>
+</div>
+
+</body>
+</html>
