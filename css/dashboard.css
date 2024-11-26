@@ -11,40 +11,64 @@ body {
     width: 80%;
 }
 
+h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    margin: 20px 0;
+}
+
 /* Novo estilo para a div com fundo branco */
 .content-box {
     background-color: white; /* Fundo branco */
     padding: 20px; /* Espaçamento interno */
     border-radius: 8px; /* Borda arredondada */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar */
-    margin-bottom: 20px; /* Margem inferior */
+    margin: 40px; /* Margem inferior */
+
 }
 
 /* Estilo do carrossel */
 .carousel {
     display: flex;
     align-items: center;
-    position: relative;
+    justify-content: space-between;
+    gap: 10px;
     overflow: hidden;
-    width: 100%;
-    margin: 20px 0;
+    position: relative;
+    margin: 20px auto;
 }
 
 .carousel-track {
     display: flex;
-    transition: transform 0.3s ease-in-out;
-    will-change: transform;
+    transition: transform 0.5s ease-in-out;
+    gap: 20px; /* Espaçamento entre itens */
 }
 
 .carousel-item {
-    flex: 0 0 33.33%; /* Display 3 items at a time */
+    flex: 0 0 30%; /* Ajuste para exibir 3 itens */
     box-sizing: border-box;
-    padding: 10px;
+    border: 1px solid #ddd; /* Adicione uma borda */
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    overflow: hidden;
+    padding: 15px;
 }
 
 .carousel-item img {
     width: 100%;
+    height: auto;
+    object-fit: cover;
     border-radius: 5px;
+}
+
+select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 300px;
 }
 
 /* Botões de navegação do carrossel */
@@ -85,27 +109,30 @@ fieldset {
 /* Header */
 .header {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end; /* Alinha os itens à esquerda */
     align-items: center;
     background-color: #333;
     padding: 15px 30px;
+    width: 100%;
+    top: 0;
+    gap: 20px; /* Espaçamento entre os itens no header */
 }
 
-.logo img {
-    width: 100px;
-    height: auto;
+.logo {
+    margin-right: 20px; /* Espaçamento entre o logo e os botões */
 }
 
 .nav-buttons {
     display: flex;
-    gap: 20px;
+    justify-content: end;
+    gap: 10px; /* Reduz a distância entre os botões */
 }
 
 .nav-button {
     color: white;
     text-decoration: none;
     font-size: 16px;
-    padding: 10px 20px;
+    padding: 8px 15px; /* Ajusta o espaçamento interno */
     background-color: #555;
     border-radius: 5px;
     transition: background-color 0.3s;
