@@ -2,10 +2,49 @@
 
 body {
     height: 100vh;
-    background-color: blue;
+    background-color: #3498db;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+}
+
+/* Logo */
+.logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Estilização dos Botões */
+.nav-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+/* Botões */
+.nav-button {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px 20px;
+  background-color: #555;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+/* Efeito Hover */
+.nav-button:hover {
+  background-color: #888;
 }
 
 .inside-register {
@@ -52,7 +91,6 @@ form {
 
 .inputs_conteiner {
   width: 60%;
-  margin-bottom: 10px;
 }
 
 h1 {
@@ -100,4 +138,61 @@ input:hover {
 input:active {
   transition: 1s;
   font-size: 1.3em;
+}
+
+.login-button {
+    background-color: #007bff; /* Azul padrão */
+    color: #fff; /* Texto branco */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s;
+    letter-spacing: 3px;
+  }
+  
+  .login-button:hover {
+    background-color: #0056b3; /* Azul mais escuro ao passar o mouse */
+  }
+  
+  .login-button:active {
+    transform: scale(0.95); /* Efeito de clique */
+  }
+
+  /* Estilização do header e navegação */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 15px 30px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+.logo img {
+  width: 100px;
+  height: auto;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-button {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px 20px;
+  background-color: #555;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.nav-button:hover {
+  background-color: #888;
 }
